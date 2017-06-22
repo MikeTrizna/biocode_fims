@@ -28,7 +28,7 @@ test_requirements = [
 
 setup(
     name='biocode_fims',
-    version='0.1.0',
+    version='0.1.1',
     description="This library contains a few convenient Python functions for accessing data from the Biocode FIMS database.",
     long_description=readme + '\n\n' + history,
     author="Mike Trizna",

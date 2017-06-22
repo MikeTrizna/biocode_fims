@@ -2,6 +2,11 @@
 History
 =======
 
+0.1.2 (2017-06-22)
+------------------
+
+* I think I got Travis-CI configured correctly.
+
 0.1.1 (2017-06-22)
 ------------------
 
