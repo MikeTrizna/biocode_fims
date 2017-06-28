@@ -4,6 +4,8 @@ import json
 API_BASE = 'http://biscicol.org/biocode-fims/rest/v1.1/'
 
 def list_projects(format='titles'):
+    """Lists all of the *public* projects on the Biocode FIMS"""
+
     params = {'includePublic':'true'}
     project_list_url = API_BASE + 'projects/'
     r = requests.get(project_list_url, params=params)
@@ -17,6 +19,8 @@ def list_projects(format='titles'):
         return 
 
 def list_datasets(project_id, format='code_list'):
+    """Lists all of the datasets for a given project"""
+
     list_url = '{}projects/{}/expeditions'.format(API_BASE, project_id)
     r = requests.get(list_url)
     datasets = r.json()
@@ -27,6 +31,8 @@ def list_datasets(project_id, format='code_list'):
         return code_list
 
 def dataset_contents(project_id, code_list, format='list_of_dicts'):
+    """Returns the full dataset contents for a list of datasets."""
+
     dataset_code_string = ','.join(code_list)
     dataset_url = '{}projects/query/json'.format(API_BASE)
     dataset_payload = {'projectId': project_id,
