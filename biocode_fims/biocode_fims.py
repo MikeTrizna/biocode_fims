@@ -30,7 +30,7 @@ def list_datasets(project_id, format='code_list'):
         code_list = [ds['expeditionCode'] for ds in datasets]
         return code_list
 
-def dataset_contents(project_id, code_list, format='list_of_dicts'):
+def dataset_contents(project_id, code_list, format='filtered_dicts'):
     """Returns the full dataset contents for a list of datasets."""
 
     dataset_code_string = ','.join(code_list)
@@ -41,9 +41,12 @@ def dataset_contents(project_id, code_list, format='list_of_dicts'):
     dataset_r = requests.get(dataset_url, params=dataset_payload)
     dataset_json = dataset_r.json()
     if format == 'raw':
-        return dataset_json
-    elif format == 'list_of_dicts':
         return dataset_json['content']
+    elif format == 'filtered_dicts':
+        filtered_contents = [{k: v for k, v in record.items() if v != ''} \
+                                for record in dataset_json['content']]
+        return filtered_contents
+
 
 if __name__ == "__main__":
     print(list_projects())

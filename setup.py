@@ -29,7 +29,7 @@ test_requirements = [
 setup(
     name='biocode_fims',
     version='0.1.5',
-    description="This library contains a few convenient Python functions for accessing data from the Biocode FIMS database.",
+    description="A Python client for accessing data from the Biocode FIMS database.",
     long_description=readme + '\n\n' + history,
     author="Mike Trizna",
     author_email='mike.trizna@gmail.com',
@@ -46,12 +46,11 @@ setup(
     zip_safe=False,
     keywords='biocode_fims',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
