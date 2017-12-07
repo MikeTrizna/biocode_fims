@@ -4,6 +4,6 @@
 
 __author__ = """Mike Trizna"""
 __email__ = 'mike.trizna@gmail.com'
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 from .biocode_fims import *
