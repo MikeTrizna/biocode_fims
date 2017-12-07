@@ -29,7 +29,7 @@ test_requirements = [
 
 setup(
     name='biocode_fims',
-    version='0.2.3',
+    version='0.2.4',
     description="A Python client for accessing data from the Biocode FIMS database.",
     long_description=readme + '\n\n' + history,
     author="Mike Trizna",
