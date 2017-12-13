@@ -83,14 +83,16 @@ By default, the DataFrame will be returned pre-sorted by 'extractionPlateID', an
 	>>> import biocode_fims
 	>>> df = biocode_fims.dataset_contents(12, ['DJBirds_P01'], format='dataframe')
 	>>> print(contents[['extractionPlateID','extractionWell','voucherID','scientificName']].head())
-           extractionPlateID extractionWell          voucherID            scientificName  
-        40         DJBirds01            A01  USNM:Birds:647764  Threskiornis aethiopicus   
-        11         DJBirds01            B01  USNM:Birds:647765          Corvus splendens   
-        12         DJBirds01            C01  USNM:Birds:647766  Threskiornis aethiopicus   
-        0          DJBirds01            D01  USNM:Birds:647762            Dromas ardeola   
-        13         DJBirds01            E01  USNM:Birds:647767            Dromas ardeola
 
-
+====  ===================  ================  =================  ========================
+  ..  extractionPlateID    extractionWell    voucherID          scientificName
+====  ===================  ================  =================  ========================
+  40  DJBirds01            A01               USNM:Birds:647764  Threskiornis aethiopicus
+  11  DJBirds01            B01               USNM:Birds:647765  Corvus splendens
+  12  DJBirds01            C01               USNM:Birds:647766  Threskiornis aethiopicus
+   0  DJBirds01            D01               USNM:Birds:647762  Dromas ardeola
+  13  DJBirds01            E01               USNM:Birds:647767  Dromas ardeola
+====  ===================  ================  =================  ========================
 
 
 TODO
