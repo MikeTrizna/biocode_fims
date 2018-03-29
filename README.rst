@@ -81,8 +81,8 @@ By default, the DataFrame will be returned pre-sorted by 'extractionPlateID', an
 .. code-block:: python
 
 	>>> import biocode_fims
-	>>> df = biocode_fims.dataset_contents(12, ['DJBirds_P01'], format='dataframe')
-	>>> print(contents[['extractionPlateID','extractionWell','voucherID','scientificName']].head())
+	>>> fims_df = biocode_fims.dataset_contents(12, ['DJBirds_P01'], format='dataframe')
+	>>> print(fims_df[['extractionPlateID','extractionWell','voucherID','scientificName']].head())
 
 ====  ===================  ================  =================  ========================
   ..  extractionPlateID    extractionWell    voucherID          scientificName
