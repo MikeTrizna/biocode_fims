@@ -9,6 +9,6 @@ cryptography==1.7
 PyYAML==3.11
 pytest==2.9.2
 pytest-runner==2.11.1
-requests==2.18.1
+requests==2.20.0
 click==6.7
 pandas==0.20.1
